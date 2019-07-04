@@ -9,7 +9,10 @@ flavorsRouter
   .get((req,res,next) => {
     FlavorsService.getRandomFlavors(req.app.get('db'))
       .then(flavors => {
-        res.json()
+        flavors.filter(flavor => flavor.strength == req.body.strength)
+      })
+      .then(flavors => {
+        res.send(flavors)
       })
       .catch(next)
   })

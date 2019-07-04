@@ -1,8 +1,9 @@
+/* eslint-disable strict */
 const FlavorsService = {
   getRandomFlavors(db) {
-    .from('flavors')
-    .select('*')
-    .where(strength, req.body.strength)
+    return db
+      .from('flavors')
+      .select('*')
   }
 }
 

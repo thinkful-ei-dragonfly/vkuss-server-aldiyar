@@ -1,9 +1,6 @@
 BEGIN;
 
-TRUNCATE
-  flavors;
-
-INSERT INTO flavors (strength, flavor_name, brand, flavor_profile, flavor_description)
+INSERT INTO flavors (strength, flavor, brand, flavor_profile, flavor_description)
 VALUES
   ('soft', 'Peach', 'Al-Fakher', 'fruity', 'Perfect mix of sweetness and juiciness!'),
   ('medium', 'White Gummy Bear', 'Fumari', 'citrus', 'Tangy, citrusy, and sweet mix of mouthwatering gummy bears'),
@@ -15,4 +12,6 @@ VALUES
   ('medium', 'Grape', 'Al-Fakher', 'fruity', 'A classic grape flavor'),
   ('strong', 'Tropical Punch', 'Tangiers', 'fruity', 'Classic tropical punch flavor'),
   ('soft', 'French Vanilla', 'Fumari', 'bakery', 'Sweet vanilla'),
-  ('medium', 'Istanbul Nights', 'Serbetli', 'fruity', 'Mixture of watermelon, grape, and mint')
+  ('medium', 'Istanbul Nights', 'Serbetli', 'fruity', 'Mixture of watermelon, grape, and mint');
+
+COMMIT;
