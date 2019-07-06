@@ -7,12 +7,21 @@ const flavorsRouter = express.Router();
 flavorsRouter
   .route('/')
   .get((req,res,next) => {
-    FlavorsService.getRandomFlavors(req.app.get('db'))
-      .then(flavors => {
-        flavors.filter(flavor => flavor.strength == req.body.strength)
-      })
+    FlavorsService.getAllFlavors(req.app.get('db'))
       .then(flavors => {
         res.send(flavors)
+      })
+      .catch(next)
+  })
+  
+flavorsRouter
+  .route('/:strength')
+  .get((req, res, next) => {
+    FlavorsService.getByStrength(
+      req.app.get('db'),
+      req.params.strength)
+      .then(flavors => {
+        res.json(flavors)
       })
       .catch(next)
   })
