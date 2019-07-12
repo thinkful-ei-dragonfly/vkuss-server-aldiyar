@@ -6,6 +6,18 @@ const FlavorsService = {
       .select('*')
   },
 
+  checkIfStrengthExists(strength) {
+    const acceptable = ['soft', 'medium', 'strong'];
+    
+    let match = acceptable.filter(value => {
+      value === strength;
+    })
+
+    let result = match.length;
+
+    return result;
+  },
+
   getByStrength(db, strength) {
     return FlavorsService.getAllFlavors(db)
       .where('flavors.strength', strength)

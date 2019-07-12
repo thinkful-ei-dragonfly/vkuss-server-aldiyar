@@ -67,13 +67,6 @@ describe('Flavors endpoint', function () {
           .expect(200, expectedFlavors)
       })
 
-      it(`responds with 404 when srength not found`, () => {
-        const strength = 'notValid'
-
-        return supertest(app)
-          .get(`/api/flavors/${strength}`)
-          .expect(404, {error: `Strength does not exist`})
-      })
     })
 
 
