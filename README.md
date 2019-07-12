@@ -1,10 +1,10 @@
-# Express Boilerplate!
+#
 
-This is a boilerplate project used for starting new projects!
+Vkuss Server. Generates list of flavors based on strength attribute.
 
 ## Set up
 
-Complete the following steps to start a new project (NEW-PROJECT-NAME):
+Complete the following steps to start a new project VKUSS:
 
 1. Clone this repository to your local machine `git clone BOILERPLATE-URL NEW-PROJECTS-NAME`
 2. `cd` into the cloned repository

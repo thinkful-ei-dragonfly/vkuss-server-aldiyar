@@ -70,6 +70,10 @@ VALUES
   ('strong', 'Melon Blend', 'Tangier`s', 'fruity', 'A blend of sweet and juicy melons'),
   ('strong', 'Foreplay on the Peach', 'Tangier`s', 'fruity', 'Sweet peach flavor'),
   ('strong', 'New Lemon Lime', 'Tangier`s', 'citrus', 'A blend of lemon and lime'),
-  ('medium', 'Ice Orange Mango', 'Serbetli', 'citrus', 'Perfect citrusy and fresh flavor');
+  ('medium', 'Ice Orange Mango', 'Serbetli', 'citrus', 'Perfect citrusy and fresh flavor'),
+  ('medium', 'Lemon Cake', 'Serbetli', 'bakery', 'Perfect recreation of lemon cake'),
+  ('medium', 'Strawberry Milkshake', 'Serbetli', 'bakery', 'Perfect recreation of strawberry milkshake'),
+  ('medium', 'Pistachio Ice Cream', 'Serbetli', 'bakery', 'Perfect recreation of pistachio ice cream'),
+  ('medium', 'Lime Peach Spice', 'Serbetli', 'bakery', 'Baked spiced peach flavor');
 
 COMMIT;
